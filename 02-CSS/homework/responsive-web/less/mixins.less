@@ -1,1 +1,30 @@
 // Mixins acá
+.flex(@direction: column, @justify,@align){ //  para definir un mixins lleva un punto por delante
+    display: flex;
+    flex-direction:@direction;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.roundImg(@radius:20px){
+    border-radius: @radius;
+}
+
+.btn(@color,@background,@border){
+    font-size: 20px;
+    font-weight: 300;
+
+    background-color: @background;
+    color: @color;
+    border-radius:@border;
+    border: 1px solid black;
+    display:inline-block; // con esta propiedad no se estira el tamaño del botom
+
+    padding: 10px;
+    cursor: pointer;
+
+    &:hover{  // con el simbolo de &  le decimos que erede todas las propiedades del btn y le adiciomanos lo que queremos
+        background-color: @color;
+        color:@background;
+    }
+}
