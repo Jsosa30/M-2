@@ -17,7 +17,7 @@
 // 	this._apellido = apellido;
 // }
 // test2.prototype.nombre = function(){
-// 	return this._name + ' ' + this._apellido;
+// 	return this._name + ' ' + this.\pellido;
 // }
 
 // var Walter  = new test2('Walter', "Moorlag");
